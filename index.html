@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8dce6">
+  <title>THE GIRLS' ARCHIVE — 20/10</title>
+  <meta name="description" content="Scrapbook tương tác 20/10 của stu dâm thái nguyên.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="brand">THE GIRLS' ARCHIVE <span>20/10</span></div>
+    <button class="music-toggle" id="musicToggle" type="button">♫ Chọn nhạc</button>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="tape tape-a"></div><div class="tape tape-b"></div>
+      <p class="eyebrow">A tiny archive of big personalities</p>
+      <h1>THE GIRLS'<br><em>ARCHIVE</em></h1>
+      <p class="lead">Một cuốn scrapbook dành cho những cô gái của <strong>stu dâm thái nguyên</strong> — vui một chút, dịu một chút, và đủ ấm để nhớ lâu.</p>
+      <div class="hero-stickers" aria-hidden="true">
+        <span>★</span><span>♡</span><span>✿</span><span>hehe</span>
+      </div>
+      <button class="primary" id="openArchive" type="button">Mở archive ✉</button>
+    </section>
+
+    <section class="section envelope-section" id="archive">
+      <p class="eyebrow">01 / OPEN THE MAIL</p>
+      <h2>Mở phong bì đi, có thư nè.</h2>
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" type="button" aria-label="Mở phong bì">
+          <div class="envelope-back"></div>
+          <div class="letter">
+            <span class="letter-kicker">20/10 NOTE</span>
+            <span id="letterText">Gửi những cô gái đã làm một năm đại học bớt nhạt hơn.</span>
+            <b>— bồn lình</b>
+          </div>
+          <div class="flap"></div>
+          <div class="seal">♡</div>
+        </button>
+      </div>
+      <button class="ghost" id="newWish" type="button">Đổi lời chúc ✨</button>
+      <p class="tiny">Mỗi lần mở là một lời chúc khác.</p>
+    </section>
+
+    <section class="section scrapbook">
+      <p class="eyebrow">02 / FOUND OBJECTS</p>
+      <h2>Những hiện vật rất đáng ngờ.</h2>
+      <div class="cards">
+        <article class="scrap-card rotate-left">
+          <span class="pin">📌</span>
+          <h3>Meme nội bộ</h3>
+          <div class="fake-polaroid">BÃI<br>DỊ<br>DẠNG</div>
+          <p>Một di sản văn hóa tập thể. Không cần giải thích, người trong cuộc tự hiểu. :))</p>
+        </article>
+        <article class="scrap-card rotate-right">
+          <span class="pin">🩷</span>
+          <h3>Chữ ký archive</h3>
+          <div class="scribble">bồn lình</div>
+          <p>Đóng dấu cho mọi lời chúc, mọi drama vô hại và mọi cuộc hẹn “5 phút nữa tới”.</p>
+        </article>
+        <article class="scrap-card">
+          <span class="pin">🌷</span>
+          <h3>Điều khoản hội chị em</h3>
+          <ul>
+            <li>Đùa để cùng cười, không đùa để làm ai khó xử.</li>
+            <li>Chuyện riêng tư ở lại trong vòng tròn tin cậy.</li>
+            <li>Ai cũng xứng đáng được chúc một ngày 20/10 thật vui.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <p class="eyebrow">03 / CLASSIFIED QUIZ</p>
+      <h2>Ai là nhân vật chính của lore này?</h2>
+      <p class="muted">Quiz meme nội bộ — không có câu nào dùng chuyện tình cảm riêng tư để làm trò đùa.</p>
+      <div id="quizBox" class="quiz-box"></div>
+    </section>
+
+    <section class="section interaction">
+      <p class="eyebrow">04 / LITTLE THINGS</p>
+      <h2>Thả chút đáng yêu vào archive.</h2>
+      <div class="interaction-grid">
+        <button class="interaction-card" id="flowerBtn" type="button">
+          <span class="big-icon">🌸</span><strong>Gieo hoa</strong><small>Click để cả trang nở hoa.</small>
+        </button>
+        <button class="interaction-card" id="heartBtn" type="button">
+          <span class="big-icon">♡</span><strong>Thả tim</strong><small>Không giới hạn. Thật sự.</small>
+        </button>
+        <button class="interaction-card" id="confettiBtn" type="button">
+          <span class="big-icon">🎉</span><strong>Confetti!</strong><small>Cho ngày hôm nay có lý do để lấp lánh.</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="section music-section">
+      <p class="eyebrow">05 / YOUR SOUNDTRACK</p>
+      <h2>Chọn một bài hát cho archive.</h2>
+      <p class="muted">Nhạc được đọc trực tiếp từ thiết bị của bạn — website không chứa URL nhạc giả.</p>
+      <label class="file-picker">
+        <span>🎧 Chọn file audio</span>
+        <input id="audioFile" type="file" accept="audio/*">
+      </label>
+      <div id="audioInfo" class="audio-info">Chưa chọn bài nào.</div>
+      <audio id="audioPlayer" controls></audio>
+    </section>
+
+    <section class="section final-note">
+      <div class="final-paper">
+        <p class="eyebrow">06 / LAST PAGE</p>
+        <h2>Gửi các cô gái.</h2>
+        <p>Chúc mọi người luôn có đủ can đảm để trở thành phiên bản mình thích, đủ dịu dàng để tự thương mình, và đủ may mắn để gặp thật nhiều người tử tế.</p>
+        <p>Chúc những ngày đi học có nhiều tiếng cười hơn deadline, nhiều kỷ niệm hơn áp lực, và sau này nhìn lại vẫn có thể nói: “Ừ, hồi đó vui thật.”</p>
+        <div class="signature">bồn lình ♡</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>THE GIRLS' ARCHIVE · 20/10 · stu dâm thái nguyên</footer>
+  <input id="musicInput" type="file" accept="audio/*" hidden>
+  <div id="particles" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
